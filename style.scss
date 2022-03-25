@@ -8,6 +8,16 @@ body {
     padding: 10px;
 } 
 .keyboard {
+    width: 930px;
+    .row-2 {
+        margin-left: 40px;
+    }
+    .row-3 {
+        margin-left: 60px;
+    }
+    .row-4 {
+        width: 100%;
+    }
     .key {
         position: relative;
         display: inline-block;
@@ -50,6 +60,10 @@ body {
             i {
                 display: block;
             }
+        }
+        &.spacebar {
+            width: 60%;
+            margin-left: 160px;
         }
     }
 }

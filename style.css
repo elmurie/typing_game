@@ -10,6 +10,22 @@ body {
   padding: 10px;
 }
 
+.keyboard {
+  width: 930px;
+}
+
+.keyboard .row-2 {
+  margin-left: 40px;
+}
+
+.keyboard .row-3 {
+  margin-left: 60px;
+}
+
+.keyboard .row-4 {
+  width: 100%;
+}
+
 .keyboard .key {
   position: relative;
   display: inline-block;
@@ -59,5 +75,10 @@ body {
 
 .keyboard .key.double-punctuation i {
   display: block;
+}
+
+.keyboard .key.spacebar {
+  width: 60%;
+  margin-left: 160px;
 }
 /*# sourceMappingURL=style.css.map */
