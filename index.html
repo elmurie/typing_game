@@ -16,14 +16,18 @@
 </head>
 
 <body>
-  <div class="timer">0</div>
+  <div class="timer" timer></div>
+  <div class="scoreboard">
+    <div class="round">Round <span round-number>1</span></div>
+    <div class="points">Points : <span points>0</span></div>
+  </div>
   <div class="container">
     <div class="quote">
       <div class="quote__content" quote-display-content></div>
       <div class="quote__author" quote-display-author></div>
     </div>
     <div class="input-field">
-      <textarea class="input-area" autofocus quote-input></textarea>
+      <textarea type="text" class="input-area" autofocus quote-input></textarea>
     </div>
     <div class="keyboard">
       <div class="row-1">

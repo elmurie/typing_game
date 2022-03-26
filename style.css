@@ -14,15 +14,32 @@ body,
   font-family: 'Open Sans', sans-serif;
 }
 
+.timer,
+.scoreboard {
+  display: inline-block;
+}
+
 .timer {
   text-align: center;
   font-size: 3rem;
 }
 
+.scoreboard {
+  margin-left: auto;
+}
+
+.scoreboard .round {
+  font-size: 2em;
+}
+
+.scoreboard .points {
+  font-size: 1.5em;
+}
+
 .container {
   width: 70%;
   margin: 0 auto;
-  background-color: purple;
+  background-color: #fca636;
   padding: 1rem;
   border-radius: 10px;
 }
@@ -53,7 +70,7 @@ body,
 }
 
 .container .input-field {
-  width: 700px;
+  width: 90%;
   margin: 0 auto 25px auto;
 }
 
@@ -142,13 +159,13 @@ body,
 }
 
 .keyboard .key.spacebar {
-  width: 60%;
+  width: 560px;
   margin-left: 160px;
 }
 
 .keyboard .key.pressed {
-  -webkit-animation: keypress 0.1s ease-out;
-          animation: keypress 0.1s ease-out;
+  -webkit-animation: keypress 0.2s ease-out;
+          animation: keypress 0.2s ease-out;
 }
 
 @-webkit-keyframes keypress {
@@ -159,18 +176,18 @@ body,
   }
   25% {
     top: 2px;
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
   }
   50% {
     top: 4px;
-    -webkit-transform: scale(0.97);
-            transform: scale(0.97);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   75% {
     top: 2px;
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
   }
   100% {
     top: 0px;
@@ -187,18 +204,18 @@ body,
   }
   25% {
     top: 2px;
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
   }
   50% {
     top: 4px;
-    -webkit-transform: scale(0.97);
-            transform: scale(0.97);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   75% {
     top: 2px;
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
   }
   100% {
     top: 0px;
