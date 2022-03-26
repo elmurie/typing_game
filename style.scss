@@ -73,9 +73,9 @@ body {
 }
 
 @keyframes keypress {
-    0%   {top: 0px;}
-    25%  {top: 2.5px;}
-    50%  {top: 5px;}
-    75%  {top: 2.5px;}
-    100% {top: 0px;}
+    0%   {top: 0px; transform: scale(1);}
+    25%  {top: 2px; transform: scale(0.98);}
+    50%  {top: 4px;transform: scale(0.97);}
+    75%  {top: 2px;transform: scale(0.98);}
+    100% {top: 0px;transform: scale(1);}
 }

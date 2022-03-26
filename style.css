@@ -92,36 +92,56 @@ body {
 @-webkit-keyframes keypress {
   0% {
     top: 0px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   25% {
-    top: 2.5px;
+    top: 2px;
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
   }
   50% {
-    top: 5px;
+    top: 4px;
+    -webkit-transform: scale(0.97);
+            transform: scale(0.97);
   }
   75% {
-    top: 2.5px;
+    top: 2px;
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
   }
   100% {
     top: 0px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes keypress {
   0% {
     top: 0px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   25% {
-    top: 2.5px;
+    top: 2px;
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
   }
   50% {
-    top: 5px;
+    top: 4px;
+    -webkit-transform: scale(0.97);
+            transform: scale(0.97);
   }
   75% {
-    top: 2.5px;
+    top: 2px;
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
   }
   100% {
     top: 0px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /*# sourceMappingURL=style.css.map */
