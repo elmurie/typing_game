@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+  <title>Speed Typing Game</title>
 </head>
+
 <body>
-    <div class="keyboard">
-        <div class="row-1">
-            <span class="key"><i key-value key-value>q</i></span>
-            <span class="key"><i key-value>w</i></span>
-            <span class="key"><i key-value>e</i></span>
-            <span class="key"><i key-value>r</i></span>
-            <span class="key"><i key-value>t</i></span>
-            <span class="key"><i key-value>y</i></span>
-            <span class="key"><i key-value>u</i></span>
-            <span class="key"><i key-value>i</i></span>
-            <span class="key"><i key-value>o</i></span>
-            <span class="key"><i key-value>p</i></span>
-            <span class="key"><i key-value>?</i></span>
-        </div>
-        <div class="row-2">
-            <span class="key"><i key-value>a</i></span>
-            <span class="key"><i key-value>s</i></span>
-            <span class="key"><i key-value>d</i></span>
-            <span class="key"><i key-value>f</i></span>
-            <span class="key"><i key-value>g</i></span>
-            <span class="key"><i key-value>h</i></span>
-            <span class="key"><i key-value>j</i></span>
-            <span class="key"><i key-value>k</i></span>
-            <span class="key"><i key-value>l</i></span>
-            <span class="key double-punctuation"><i key-value>:</i><i key-value>;</i></span>
-        </div>
-        <div class="row-3">
-            <span class="key"><i key-value>z</i></span>
-            <span class="key"><i key-value>x</i></span>
-            <span class="key"><i key-value>c</i></span>
-            <span class="key"><i key-value>v</i></span>
-            <span class="key"><i key-value>b</i></span>
-            <span class="key"><i key-value>n</i></span>
-            <span class="key"><i key-value>m</i></span>
-            <span class="key punctuation"><i key-value>,</i></span>
-            <span class="key punctuation"><i key-value>.</i></span>
-        </div>
-        <div class="row-4">
-            <span class="key spacebar"><i key-value> </i></span>
-        </div>
+  <div class="timer">0</div>
+  <div class="container">
+    <div class="quote">
+      <div class="quote__content" quote-display-content></div>
+      <div class="quote__author" quote-display-author></div>
     </div>
-    <script src="main.js"></script>
+    <div class="input-field">
+      <textarea class="input-area" autofocus quote-input></textarea>
+    </div>
+    <div class="keyboard">
+      <div class="row-1">
+        <span class="key"><i key-value key-value>q</i></span>
+        <span class="key"><i key-value>w</i></span>
+        <span class="key"><i key-value>e</i></span>
+        <span class="key"><i key-value>r</i></span>
+        <span class="key"><i key-value>t</i></span>
+        <span class="key"><i key-value>y</i></span>
+        <span class="key"><i key-value>u</i></span>
+        <span class="key"><i key-value>i</i></span>
+        <span class="key"><i key-value>o</i></span>
+        <span class="key"><i key-value>p</i></span>
+        <span class="key"><i key-value>?</i></span>
+      </div>
+      <div class="row-2">
+        <span class="key"><i key-value>a</i></span>
+        <span class="key"><i key-value>s</i></span>
+        <span class="key"><i key-value>d</i></span>
+        <span class="key"><i key-value>f</i></span>
+        <span class="key"><i key-value>g</i></span>
+        <span class="key"><i key-value>h</i></span>
+        <span class="key"><i key-value>j</i></span>
+        <span class="key"><i key-value>k</i></span>
+        <span class="key"><i key-value>l</i></span>
+        <span class="key double-punctuation"><i key-value>:</i><i key-value>;</i></span>
+      </div>
+      <div class="row-3">
+        <span class="key"><i key-value>z</i></span>
+        <span class="key"><i key-value>x</i></span>
+        <span class="key"><i key-value>c</i></span>
+        <span class="key"><i key-value>v</i></span>
+        <span class="key"><i key-value>b</i></span>
+        <span class="key"><i key-value>n</i></span>
+        <span class="key"><i key-value>m</i></span>
+        <span class="key punctuation"><i key-value>,</i></span>
+        <span class="key punctuation"><i key-value>.</i></span>
+      </div>
+      <div class="row-4">
+        <span class="key spacebar"><i key-value> </i></span>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
