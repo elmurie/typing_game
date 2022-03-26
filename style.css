@@ -38,6 +38,8 @@ body {
   -webkit-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75), 10px 20px 25px rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75), 10px 20px 25px rgba(0, 0, 0, 0.4);
   overflow: hidden;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .keyboard .key i {
@@ -80,5 +82,46 @@ body {
 .keyboard .key.spacebar {
   width: 60%;
   margin-left: 160px;
+}
+
+.keyboard .key.pressed {
+  -webkit-animation: keypress 0.2s linear;
+          animation: keypress 0.2s linear;
+}
+
+@-webkit-keyframes keypress {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 2.5px;
+  }
+  50% {
+    top: 5px;
+  }
+  75% {
+    top: 2.5px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes keypress {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 2.5px;
+  }
+  50% {
+    top: 5px;
+  }
+  75% {
+    top: 2.5px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

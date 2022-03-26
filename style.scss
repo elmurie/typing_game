@@ -30,6 +30,7 @@ body {
         box-shadow: 0 0 0 2px rgba(0,0,0,0.75),
         10px 20px 25px rgba(0,0,0,0.4);
         overflow: hidden;
+        transition: all 0.2s;
         i {
             position: relative;
             color: #ffffff;
@@ -65,5 +66,16 @@ body {
             width: 60%;
             margin-left: 160px;
         }
+        &.pressed {
+            animation: keypress 0.2s linear;
+        }
     }
+}
+
+@keyframes keypress {
+    0%   {top: 0px;}
+    25%  {top: 2.5px;}
+    50%  {top: 5px;}
+    75%  {top: 2.5px;}
+    100% {top: 0px;}
 }
