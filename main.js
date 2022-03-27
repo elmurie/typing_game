@@ -39,13 +39,14 @@ window.addEventListener('keydown', (key) => {
     })
 });
 
+// PASTE DISABLED ON TEXTAREA
+userInput.onpaste = e => {
+    e.preventDefault();
+    return false;
+};
+
 // LISTENER TEXTAREA
 userInput.addEventListener('input', () => {
-    // PASTE DISABLED ON TEXTAREA
-    userInput.onpaste = e => {
-        e.preventDefault();
-        return false;
-    };
     let correct = true;
     const arrayQuote = quoteDisplayContent.querySelectorAll('span');
     const arrayValue = userInput.value.split('');

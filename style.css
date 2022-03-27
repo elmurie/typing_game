@@ -6,7 +6,7 @@
 }
 
 body {
-  padding: 20px;
+  padding: 10px;
 }
 
 body,
@@ -14,25 +14,29 @@ body,
   font-family: 'Open Sans', sans-serif;
 }
 
-.timer,
-.scoreboard {
-  display: inline-block;
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 25px;
 }
 
-.timer {
+.top .timer {
   text-align: center;
   font-size: 3rem;
 }
 
-.scoreboard {
+.top .scoreboard {
   margin-left: auto;
 }
 
-.scoreboard .round {
+.top .scoreboard .round {
   font-size: 2em;
 }
 
-.scoreboard .points {
+.top .scoreboard .points {
   font-size: 1.5em;
 }
 
@@ -90,7 +94,10 @@ body,
 }
 
 .keyboard {
-  width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
 }
 
 .keyboard .row-2 {

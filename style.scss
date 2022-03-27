@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    padding: 20px;
+    padding: 10px;
 }
 
 body,
@@ -12,25 +12,26 @@ body,
     font-family: 'Open Sans', sans-serif;
 }
 
-.timer,
-.scoreboard {
-    display: inline-block;
+.top {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 25px;
+    .timer {
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    .scoreboard {
+        margin-left: auto;
+        .round {
+            font-size: 2em;
+        }
+        .points {
+            font-size: 1.5em;
+        }
+    }
 }
 
-.timer {
-    text-align: center;
-    font-size: 3rem;
-}
-
-.scoreboard {
-    margin-left: auto;
-    .round {
-        font-size: 2em;
-    }
-    .points {
-        font-size: 1.5em;
-    }
-}
 
 .container {
     width: 70%;
@@ -82,7 +83,8 @@ body,
 }
 
 .keyboard {
-    width: 100%;
+    width: max-content;
+    margin: 0 auto;
     .row-2 {
         margin-left: 40px;
     }
